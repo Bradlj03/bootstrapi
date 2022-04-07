@@ -11,26 +11,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="background-color: salmon;">
     
     <div class="api-section">
-        <h1>
-            Part 1: Random Dog Generator
-        </h1>
+        <h3> Part 1: Random Dog Generator </h3>
         <div class="api-content">
-            [INSERT RANDOM DOG GENERATOR HERE]
+            <div id="randomDog" class='card mb-3'>
+                <div class = "card-body">
+                    <button id= "newDogButton" type="button" class="btn btn-outline-primary" style="background-color: yellow; text-decoration-color: red;">New Dog</button>
+                </div>
+                <img id= "dogImg" src ="" class="card-img-bottom" alt="" height="400px" width="auto">
+
+            </div>
+
         </div>
     </div>
 
     <div class="api-section">
-        <h1>
+        <h3>
             Part 2: Weather App
-        </h1>
+        </h3>
         <div class="api-content">
-            [INSERT WEATHER APP HERE]
+           <form id= "cityForm">
+               <div class="mb-3">
+                   <label for="inputCity" class="form-label">City:</label>
+                   <input type="text" class = "form-control" id="inputCity" placeholder="Please Type a City"/>
+               </div>
+
+           </form>
+        </div>
+        
+        <div id="currentWeather">
+            <!-- <label> Current weather in</label> -->
+            <div id="city"></div>
+            <div id="temperature"></div>
+            <div id="wind"></div>
+            <div id="description"></div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
